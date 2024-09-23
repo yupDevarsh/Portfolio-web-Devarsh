@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav a {
+            padding: 8px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        nav a:hover {
+            background-color: lightgray;
+            color: black;
+        }
+
+        .white-txt {
+            color: white;
+        }
+
+        .verdana-txt {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+
+        button {
+            height: 50px;
+            width: 150px;
+            border-radius: 25px;
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        button:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        #projects {
+            padding: 50px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .project-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            height: 380px;
+            width: 200px;
+            /* Adjust as needed */
+        }
+
+        .project-card:hover {
+            background-color: #333;
+            color: white;
+            transition: all;
+        }
+
+        .project-card i {
+            font-size: 30px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .project-card h3 {
+            margin-bottom: 5px;
+        }
+
+        #skills {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #skills li {
+            margin-bottom: 20px;
+        }
+
+        #skills span {
+            display: block;
+            text-align: left;
+        }
+
+        .progress {
+            height: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background-color: #ff5722;
+        }
+
+        #skills {
+            background-color: #333;
+            height: 700px;
+        }
+
+        #contact {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        #contact form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        #contact label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #contact input,
+        #contact textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+        }
+
+        #contact button {
+            font-size: 15px;
+            width: 150px;
+            padding: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            padding: 10px 0;
+            height: 50px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="font-size: 40px;margin-top: 0;">My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero-Section  -->
+    <div style="height: 600px;background-color: rgb(245, 245, 245);background-image: url();background-size: cover;">
+        <table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+
+            <tr>
+                <td width="40%" style="padding-top: 100px;">
+                    <img src="https://purepng.com/public/uploads/large/purepng.com-manmanadult-malemale-childboy-beingmens-1421526920943c4xhn.png"
+                        width="400px" height="500px">
+                </td>
+
+                <td width="60%" align="center ">
+                    <h1
+                        style="font-size: 110px;margin-bottom: 10px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                        Devarsh Prajapati</h1>
+
+                    <h4
+                        style="font-size: 25px;margin-top: 0px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; ">
+                        I am an Engineer</h4>
+                    <br>
+                    <button>Hire Me</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- About Section -->
+    <table id="about" border="0" width="100%" height="750px" cellpadding="0" cellspacing="0" bgcolor="#333">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+                    <tr>
+                        <td height="100" align="center" valign="middle" colspan="2">
+                            <h3 class="white-txt verdana-txt"
+                                style="font-size: 45px;margin-bottom: 5px;margin-top: 5px;">
+                                About Me
+                            </h3>
+                            <hr color="white" width="90">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="40%">
+                            <img src="https://images.squarespace-cdn.com/content/v1/651c2dda8544d33ab01b68a0/9b52d1fe-655b-43b6-bd3d-eff703eff68a/I%E2%80%99m+tori%2C-2.png"
+                                width="600px" height="200px">
+                        </td>
+
+                        <td width="60%">
+                            <h3 class="white-txt verdana-txt">
+                                Thanks for your interest, here
+                                is a quick story of me and this
+                                website.
+                                <hr color="black">
+                                Devarsh Prajapati An student of silveroak university. I
+                                loves to solve programming problems
+                                in most efficient ways. 
+                                <hr color="black">
+
+                                I do my work mainly in C-Language,
+                                C++ and JAVA. C++ and Data Structure
+                                and Algorithm are my stronger section.
+                                Besides these I know Web Development,
+                                LINUX and database as well.
+                                <hr color="black">
+
+                                This website is basically one of my
+                                Web Development project which is
+                                built using HTML only.
+                                Here one can also find ideas for
+
+                            </h3>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!-- project-section  -->
+    <section id="projects">
+        <h3 class="verdana-txt" style="font-size: 35px;margin-bottom: 5px;">
+            Projects
+        </h3>
+        <hr color="black" width="90">
+        <br><br>
+        <div class="project-cards" style="padding: 20px 100px;">
+            <div class="project-card">
+                <i class="fas fa-desktop"></i>
+                <h3 style="font-size: 25px;">Project 1</h3>
+                <p>I created a website for Instalogo as a project using HTML. The goal was to design a user-friendly interface that showcases the features of the service effectively. I focused on structuring the site with clear sections, including a homepage, services overview, and contact information. I utilized HTML elements to create a visually appealing layout, ensuring that it is easy to navigate. This project helped me improve my web development skills and understand the importance of clean code .</p>
+            </div>
+            <div class="project-card">
+                <i class="fas fa-user-circle"></i>
+                <h3 style="font-size: 25px;">Project 2</h3>
+                <p>I created a skincare website using HTML to provide an engaging platform for showcasing skincare products and tips. The site features clear sections for product categories, routines, and educational resources. This project improved my web development skills and enhanced my understanding of user experience and the importance of clean, semantic code. </p>
+            </div>
+            <div class="project-card">
+                <i class="fas fa-search"></i>
+                <h3 style="font-size: 25px;">Project 3</h3>
+                <p>For my portfolio project, I developed a personal website using HTML to showcase my projects and skills. The site features distinct sections, including project showcases, an about me page, and contact information, ensuring easy navigation. This project strengthened my ability to present my work and provided valuable experience in portfolio design.</p>
+            </div>
+        </div>
+    </section>
+    <!-- skill-section  -->
+    <section id="skills">
+        <h3 class="white-txt verdana-txt" style="font-size: 45px;margin-bottom: 5px;padding-top: 50px;">
+            Skills
+        </h3>
+        <hr color="white" width="90" style="margin-bottom: 70px;">
+
+        <table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+
+            <tr>
+                <td width="50%" style="padding: 0px 40px;">
+                    <ul>
+                        <li>
+                            <span class="white-txt">Programming Languages</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%;"></div>
+                            </div>
+                            <span class="white-txt">90%</span>
+                        </li>
+                        <br>
+                        <li>
+                            <span class="white-txt">Version Control</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%;"></div>
+                            </div>
+                            <span class="white-txt">90%</span>
+                        </li>
+                        <br>
+                        <li>
+                            <span class="white-txt">Problem-Solving</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%;"></div>
+                            </div>
+                            <span class="white-txt">90%</span>
+                        </li>
+                        <br>
+                        <li>
+                            <span class="white-txt">Algorithms and Data Structures</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%;"></div>
+                            </div>
+                            <span class="white-txt">90%</span>
+                        </li>
+                        <br>
+                        <li>
+                            <span class="white-txt">Database Management</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%;"></div>
+                            </div>
+                            <span class="white-txt">90%</span>
+                        </li>
+
+                    </ul>
+                </td>
+
+                <td width="50%" style="padding: 0px 40px;">
+                    <ul>
+                        <li>
+                            <span class="white-txt">Web Development</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%;"></div>
+                            </div>
+                            <span class="white-txt">90%</span>
+                        </li>
+                        <br>
+                        <li>
+                            <span class="white-txt">APIs and RESTful Services</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%;"></div>
+                            </div>
+                            <span class="white-txt">90%</span>
+                        </li>
+                        <br>
+                        <li>
+                            <span class="white-txt">Testing and Debugging</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%;"></div>
+                            </div>
+                            <span class="white-txt">90%</span>
+                        </li>
+                        <br>
+                        <li>
+                            <span class="white-txt">Agile Methodologies</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%;"></div>
+                            </div>
+                            <span class="white-txt">90%</span>
+                        </li>
+                        <br>
+                        <li>
+                            <span class="white-txt">Continuous Learning</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%;"></div>
+                            </div>
+                            <span class="white-txt">90%</span>
+                        </li>
+
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- contact-section  -->
+
+    <center>
+        <h3 class="verdana-txt" style="font-size: 35px;margin-bottom: 5px;">
+            Contact Me
+        </h3>
+    </center>
+    <hr color="black" width="110">
+    <br><br>
+    <section id="contact">
+        <form>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="comments">Comments/Questions:</label>
+            <textarea id="comments" name="comments" required rows="7"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <center>
+            <p>©Copyright 2024</p>
+        </center>
+    </footer>
+</body>
+
+</html>
